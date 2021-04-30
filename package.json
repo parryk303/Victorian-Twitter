@@ -1,0 +1,25 @@
+{
+  "name": "victorian-twitter",
+  "version": "1.0.0",
+  "description": "Victorian twitter clone",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/parryk303/Victorian-Twitter.git"
+  },
+  "keywords": [
+    "Victorian"
+  ],
+  "author": "Kyle Parry",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/parryk303/Victorian-Twitter/issues"
+  },
+  "homepage": "https://github.com/parryk303/Victorian-Twitter#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
