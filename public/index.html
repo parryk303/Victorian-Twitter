@@ -57,7 +57,7 @@
         .appendTo('body');
 
         // Home
-        var $home = $('<div id="home" class="main" onClick="window.location.reload();"></div>')
+        var $home = $('<div id="home" class="main" onClick=window.location.href="https://portfolio-jkqap25pb-parryk303.vercel.app/";></div>')
         .css('border-width', '5px')
         .css('grid-column', '1')
         .css('grid-row', '1')
@@ -79,7 +79,7 @@
         .appendTo($home);
 
         // Abount Info
-        var $about = $('<div id="about" class="main"></div>')
+        var $about = $('<div id="about" onClick=window.location.href="https://portfolio-jkqap25pb-parryk303.vercel.app/bio" class="main"></div>')
         .css('border-width', '10px')
         .css('grid-column', '3')
         .css('grid-row', '1')
@@ -172,10 +172,17 @@
         .css('height', '390px')
         .css('max-height', '390px')
         .appendTo($body);
-        var $footerTitle = $('<p class="header">Thanks for dropping by!</p>').css('background-color', 'white')
-        .css('margin', '200px 0px 0px 0px 0px')
-        .css('max-width', '800px')
-        .appendTo($footer)
+        var $footerTitle = $('<p class="footerTitle">Thanks for dropping by!</p>').css('background-color', 'white')
+        .css('margin', '100px 20px 20px 30px')
+        .css('height', '70px')
+        .css('border', 'solid')
+        .css('display', 'flex-box')
+        .css('font-size', '50px')
+        .css('font-family', '"Ewert", cursive')
+        .css('text-align', 'center')
+        .css('align-items', 'center')
+        .css('box-shadow', '0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.8)')
+        .appendTo($footer);
 
         // Get tweets from dataGenerator
         const generateTweets = () => {
