@@ -46,23 +46,23 @@
         .appendTo($header);
 
         // Input Bar
-        var $input = $('<div class="inputBar" ></div>')
+        var $input = $('<div class="inputBar"></div>')
         .css('border', 'solid')
         .css('display', 'grid')
-        .css('grid-template-rows', '1fr 1fr')
-        .css('grid-template-columns', '400px 1fr 400px')
+        .css('grid-template-rows', '400px 200px')
+        .css('grid-template-columns', '400px 50px 400px')
         .css('justify-content', 'center')
         .css('background', 'url(backgrounds/headerBackground.jpg)')
         .css('box-shadow', '0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.8)')
         .appendTo('body');
 
         // Home
-        var $home = $('<div id="home" class="main" onClick="window.location.reload();" ></div>')
+        var $home = $('<div id="home" class="main" onClick="window.location.reload();"></div>')
         .css('border-width', '5px')
         .css('grid-column', '1')
-        .css('grid-row', '1/3')
-        .css('width', '371px')
-        .css('height', '401px')
+        .css('grid-row', '1')
+        .css('width', '100%')
+        .css('height', '100%')
         .css('max-width', '371px')
         .css('max-height', '401px')
         .css('background', 'url(backgrounds/homeBackground.jpg)')
@@ -82,9 +82,9 @@
         var $about = $('<div id="about" class="main"></div>')
         .css('border-width', '10px')
         .css('grid-column', '3')
-        .css('grid-row', '1/3')
-        .css('width', '371px')
-        .css('height', '401px')
+        .css('grid-row', '1')
+        .css('width', '100%')
+        .css('height', '100%')
         .css('max-width', '371px')
         .css('max-height', '401px')
         .css('margin', '10px 10px 10px 10px')
@@ -101,21 +101,23 @@
         });
 
         // Show More Tweets Button
-        var $showMoreTweets = $('<button id="showMoreTweets" class="main">Show more Tweets!</button>')
+        var $showMoreTweets = $('<button id="showMoreTweets" class="main"></button>')
         .css('grid-row', '1')
+        .css('display', 'none')
         .css('grid-column', '2')
-        .css('font-size', '50px')
-        .css('margin', '10px 70px 10px 70px')
+        .css('font-size', '1px')
+        .css('width', '250px')
+        .css('height', '300px')
+        .css('margin', '10px 5px 10px 5px')
         .css('display', 'inline')
         .css('justify-content', 'center')
         .css('padding', '20px 20px 20px 20px')
         .css('align-content', 'center')
-        .css('font-family', 'Share Tech Mono')
         .css('text-align', 'center')
         .css('border', 'solid')
         .css('border-radius', '20px')
         .css('box-shadow', '0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.8)')
-        $showMoreTweets.appendTo($input);
+        // $showMoreTweets.appendTo($input);
         $('#showMoreTweets').mouseenter(() => {
           $showMoreTweets.css('background', 'url("https://media2.giphy.com/media/5T06ftQWtCMy0XFaaI/giphy.gif?cid=ecf05e477zkdrziox2iv20jww2ryegaownh6j6rxoi9hlox6&rid=giphy.gif")')
         });
@@ -127,9 +129,10 @@
         var $write = $('<br><input id="write" class="geust" type="text" placeholder="Write a Tweet Here!" ></input>')
         .css('background', 'url(backgrounds/tweetBackground.jpg)')
         .css('grid-row', '2')
-        .css('grid-column', '2')
+        .css('grid-column', '1')
+        .css('width', '150%')
         .css('font-size', '16px')
-        .css('margin', '5px 5px 5px 5px')
+        .css('margin', '30px 0px 15px 120px')
         .css('padding', '20px 20px 20px 20px')
         .css('align-content', 'center')
         .css('font-family', 'Helvetica')
