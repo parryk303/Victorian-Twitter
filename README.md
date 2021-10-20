@@ -1,7 +1,7 @@
 # Victorian-Twitter
 A Victorian twitter clone utilizing JQuery
 
-![victorian-twitter](./o.png)
+![victorian-twitter](./vt.png)
 
 # Set Up
 > Run the following commands from the root
